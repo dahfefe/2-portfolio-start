@@ -62,16 +62,15 @@ main {
 
 .card {
   flex: 1 0 0;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
+  border: 6px solid var(--headertext-boxbackground);
 }
 
-.card header {
+.card h3 {
   padding: 20px;
-  background: #13293d;
-  color: #fff;
+  background: var(--headertext-boxbackground);
+  color: #000000;
 }
 
 .card img {
