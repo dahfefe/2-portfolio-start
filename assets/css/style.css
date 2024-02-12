@@ -1,0 +1,33 @@
+
+:root {
+  --headertext-boxbackground: rgb(94, 218, 218);
+}
+
+/* Universal Selector */
+* {
+  margin:0;
+  padding:0;  
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #050706c8;
+}
+
+.text-right {
+  text-align: right;
+}
+
+li {
+  display: inline;
+  padding: 3px 25px;
+  border-bottom: 6px solid var(--headertext-boxbackground);
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--headertext-boxbackground);
+}
