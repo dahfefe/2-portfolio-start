@@ -61,14 +61,15 @@ main {
 .card {
   flex: 1 0 0;
   padding: 0px;
-  text-align: center;
   border: 6px solid var(--headertext-boxbackground);
 }
 
 .card h3 {
-  padding: 20px;
+  position: absolute;
+  padding: 10px;
   background: var(--headertext-boxbackground);
   color: #000000;
+  margin-top: 100px;
 }
 
 .card img {
