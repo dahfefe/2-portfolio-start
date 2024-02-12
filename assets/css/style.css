@@ -18,6 +18,14 @@ header {
   background-color: #050706;
 }
 
+#name-header {
+  position: absolute;
+  background-color: var(--headertext-boxbackground);
+  margin: 4px 0px 0px 0px;
+  padding: 0px 10px 0px 35px;
+  line-height: 50px;
+}
+
 .text-right {
   text-align: right;
 }
@@ -48,16 +56,6 @@ main {
   /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
   margin-top: 2%;
-}
-
-.main-header {
-  display: flex;
-  /* Forces elements to the next line if they don't fit */
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 60px;
-  background: #13293d;
-  color: #fff;
 }
 
 .card {
