@@ -51,16 +51,21 @@ a {
   background-position: center;
 }
 
-main {
+.aboutme {
+  display: inline-block;
+}
+
+.bodyh1 {
+  display: inline-block;
+  float: left;
+  margin: 50px 50px 50px 50px;
+}
+
+.portfolio_links {
   display: flex;
   /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
   margin-top: 2%;
-}
-
-.aboutme h1 {
-  float: left;
-  margin: 50px 50px 50px 50px;
 }
 
 .card {
