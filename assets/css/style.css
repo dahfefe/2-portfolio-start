@@ -61,7 +61,7 @@ a {
 .bodyh1 {
   display: inline-block;
   float: left;
-  margin: 0 20px 50px 50px;
+  margin: 0 20px 20px 50px;
   min-width: 170px;
   text-align: right;
   border-right: 5px solid var(--footerlinkcolor);
@@ -69,7 +69,7 @@ a {
 }
 
 .aboutme h1 {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 main {
