@@ -1,6 +1,7 @@
 
 :root {
   --headertext-boxbackground: rgb(218, 199, 94);
+  --footerlinkcolor: rgb(171, 149, 27);
 }
 
 /* Universal Selector */
@@ -35,6 +36,8 @@ li {
   padding: 3px 25px;
   border-bottom: 6px solid var(--headertext-boxbackground);
   margin-right: 30px;
+  text-decoration: none;
+  color: var(--headertext-boxbackground);
 }
 
 a {
@@ -61,7 +64,7 @@ a {
   margin: 0 20px 50px 50px;
   min-width: 170px;
   text-align: right;
-  border-right: 5px solid rgb(171, 149, 27);
+  border-right: 5px solid var(--footerlinkcolor);
   padding-right: 16px;
 }
 
@@ -108,4 +111,24 @@ main h1 {
 
 footer h1 {
   padding-bottom: 50px;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+footer li {
+  display: inline;
+  padding: 3px 25px;
+  border-bottom: 6px solid var(--footerlinkcolor);
+  margin-right: 30px;
+  text-decoration: none;
+  color: var(--footerlinkcolor);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--footerlinkcolor);
 }
