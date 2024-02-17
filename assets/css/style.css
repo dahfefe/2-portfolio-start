@@ -59,12 +59,10 @@ main {
 }
 
 .about_me h1 {
-  position: relative;
   float: left;
 }
 
 .about_me pre {
-  position: relative;
   float: right;
 }
 
