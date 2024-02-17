@@ -54,6 +54,10 @@ a {
   background-position: center;
 }
 
+body {
+  min-height: 100vh;
+}
+
 .aboutme {
   display: inline-block;
 }
@@ -85,6 +89,7 @@ main h1 {
   /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
   margin-top: 2%;
+  justify-content: space-evenly;
 }
 
 .card {
@@ -123,6 +128,7 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
+  justify-content: space-evenly;
 }
 
 footer li {
@@ -137,4 +143,12 @@ footer li {
 footer a {
   text-decoration: none;
   color: var(--footerlinkcolor);
+}
+
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  header,
+  nav {
+    flex-direction: column;
+  }
 }
