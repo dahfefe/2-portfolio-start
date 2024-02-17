@@ -58,14 +58,10 @@ main {
   margin-top: 2%;
 }
 
-.about_me h1 {
+.aboutme h1 {
   float: left;
+  margin: 50px 50px 50px 50px;
 }
-
-.about_me pre {
-  float: right;
-}
-
 
 .card {
   flex: 0 0 0;
