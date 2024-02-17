@@ -58,7 +58,18 @@ a {
 .bodyh1 {
   display: inline-block;
   float: left;
-  margin: 50px 50px 50px 50px;
+  margin: 0 20px 50px 50px;
+  min-width: 170px;
+  text-align: right;
+  border-right: 5px solid rgb(171, 149, 27);
+}
+
+.aboutme h1 {
+  padding-bottom: 50px;
+}
+
+main h1 {
+  padding-bottom: 200px;
 }
 
 .portfolio_links {
