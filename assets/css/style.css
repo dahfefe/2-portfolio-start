@@ -144,25 +144,16 @@ footer h1 {
   padding-bottom: 50px;
 }
 
-#footer_navlist {
+footer nav {
   flex: 3;
   justify-content: space-around;
-  padding: 0 20px;
-}
-
-footer ul {
-  padding-top: 40px;
-}
-
-footer li {
-  padding: 3px 25px;
-  border-bottom: 6px solid var(--footerlinkcolor);
-  margin-right: 30px;
-  text-decoration: none;
-  color: var(--footerlinkcolor);
+  padding: 45px 30px 55px 20px;
 }
 
 footer a {
+  padding: 3px 25px;
+  border-bottom: 6px solid var(--footerlinkcolor);
+  margin-right: 30px;
   text-decoration: none;
   color: var(--footerlinkcolor);
 }
