@@ -2,6 +2,8 @@
 
 ## Description
 
+As a up-and-coming web developer, I want to create a personal project portfolio which is accessible and public online so that future employers and clients can review my work and experience for potential hire. 
+
 This is the beginning development of creating my personal portfolio of coding and web development projects that will eventually showcase my work to potential employers. 
 
 My main purpose in creating this initial portfolio is fundamental as most (if not all) web developers need a website to display their personal work, experience, and biography to other companies who may want to employ them for their potential value. 
