@@ -1,9 +1,11 @@
 
+/* root variable for globally controlling color selections on webpage */
 :root {
   --headertext-boxbackground: rgb(218, 199, 94);
   --footerlinkcolor: rgb(171, 149, 27);
 }
 
+/* Universal selectors */
 * {
   margin:0;
   padding:0;  
@@ -11,6 +13,7 @@
   box-sizing: border-box;
 }
 
+/* Header section which includes main background style for most upper section */
 header {
   height: 60px;
   width: 100%;
@@ -18,6 +21,7 @@ header {
   background-color: #050706;
 }
 
+/* Tag id for name displayed on upper left corner of page for styling. Remove from the flow */
 #name-header {
   position: absolute;
   background-color: var(--headertext-boxbackground);
@@ -26,15 +30,18 @@ header {
   line-height: 50px;
 }
 
+/* Navigation selector to adjust to flex layout to optimize media queries */
 nav {
   display: flex;
 }
 
+/* Class selector for upper navigation bar to style separately from lower navigation bar */
 .header-nav {
   justify-content: flex-end;
   margin-right: 20px;
 }
 
+/* Class selector for anchors in upper navigation bar to style in resemblance to assignment directions */
 .header-nav a {
   padding: 10px 30px 5px 35px;
   border-bottom: 6px solid var(--headertext-boxbackground);
@@ -43,16 +50,19 @@ nav {
   color: var(--headertext-boxbackground);
 }
 
+/* Element selector for anchors */
 a {
   text-decoration: none;
   color: var(--headertext-boxbackground);
 }
 
+/* Element selector for body section */
 body {
   min-height: 100vh;
   display: block;
 }
 
+/* Class selector for section immediately under header */
 .header_panel {
   display: flex;
   flex: 1;
@@ -64,6 +74,7 @@ body {
   background: linear-gradient(90deg, rgba(2,0,36,1) 26%, rgba(255,177,104,1) 100%, rgba(193,174,148,1) 100%, rgba(0,212,255,1) 100%);
 }
 
+/* Class selector for h2 of the section immediately under header section */
 .header_panel h2 {
   position: absolute;
   padding: 10px;
@@ -74,16 +85,19 @@ body {
   text-decoration: wavy;
 }
 
+/* Class selector for image in header panel */
 .header_panel img {
   border-radius: 120px;
   margin-left: 80px;
 }
 
+/* Class selector for About Me section */
 .aboutme {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Class selector for all h1 headers on page */
 .bodyh1 {
   flex: 1;
   margin: 0 20px 20px -80px;
@@ -92,15 +106,18 @@ body {
   padding-right: 16px;
 }
 
+/* Class selector for h1 in About section to style separately from other h1 headers */
 .aboutme h1 {
   padding-bottom: 80px;
 }
 
+/* Class selector for paragraphs in About Me section */
 .aboutme p {
   flex: 3;
   padding: 0 20px;
 }
 
+/* Element selector for "main" section */
 main {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -108,10 +125,12 @@ main {
   flex-wrap: wrap;
 }
 
+/* Class selector for main h1 to style separately from other h1 headers */
 main h1 {
   padding-bottom: 200px;
 }
 
+/* Class selector for project link images with headers */
 .portfolio_links {
   flex: 3;
   display: flex;
@@ -120,6 +139,7 @@ main h1 {
   padding: 0 20px;
 }
 
+/* Class selector for "cards" inside "main" section */
 .card {
   flex: 1 0 0;
   padding: 0px;
@@ -127,6 +147,7 @@ main h1 {
   margin: 1%;
 }
 
+/* Class selector for for all h3 headers */
 .card h3 {
   position: absolute;
   padding: 10px;
@@ -135,16 +156,20 @@ main h1 {
   margin-top: 290x;
 }
 
+/* Tag id selector for styling the specified main project link that is currently accessible to use for showcase */
+/* We needed to make this "card" specifically bigger than the others */
 #horiseon_card {
   min-width: 900px;
 }
 
+/* Class selector for styling the text displayed under h3 headers */
 .second_text {
   font-size: 12px;
   font-weight: normal;
   margin-top: 3px;
 }
 
+/* Class selector for styling images in "main" section */
 .card img {
   width: 100%;
   min-width: 400px;
@@ -152,25 +177,30 @@ main h1 {
   min-height: 265px;
 }
 
+/* Class selector for curser hover effect to gray out image when hovering over project images */
 .card:hover {
   -webkit-filter: grayscale(80%);
 }
 
+/* Element selector for footer section. Adjusted to flex to optimize responsive design */
 footer {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Element selector h1 header in footer section */
 footer h1 {
   padding-bottom: 50px;
 }
 
+/* Element selector for navigation bar in footer section */
 footer nav {
   flex: 3;
   justify-content: space-around;
   padding: 45px 30px 55px 20px;
 }
 
+/* Element selector for anchors in footer section */
 footer a {
   padding: 3px 25px;
   border-bottom: 6px solid var(--footerlinkcolor);
@@ -179,40 +209,44 @@ footer a {
   color: var(--footerlinkcolor);
 }
 
+/* media queries for 1250px display to adjust navigation bars as page begins to break when shrinking webpage or device changes*/
 @media screen and (max-width: 1250px) {
   header {
     background-color: white;
   }
-  
+  /* Tag id selector targeted here to look for aesthetic and centered as webpage shrinks or device changes */
   #name-header {
     position: relative;
     text-align: center;
     margin-right: 20px;
     padding-left: 0px;
   }
-  
+  /* Navgigation bar targeted with media query to adjust to column direction for better user accessibility as webpage shrinks or device changes */
   nav {
       flex-direction: column;
       background-color: black;
       text-align: center;
       margin: auto;
   }
-
+/* h2 header removed with media query as no longer aesthetic with screen size display changes */
   .header_panel h2 {
     display: none;
   }
-
+/* Adjust size of showcased project link to better fit on screen and not conflict with other elements as screen size shrinks */
   #horiseon_card {
     min-width: 600px;
   }
-
+/* Changes made to panel under header section as screen size shrinks as color gradient conflicts with shift */
   .header_panel {
     background-color: black;
     background: none;
   }
 }
 
+/* media queries for 950px display to adjust navigation bars as page begins to break when shrinking webpage */
+/* media queries here also include adjusting flex layout to column direction to optimize user accessibility when shrinking display page */
 @media screen and (max-width: 950px) {
+  /* Changes made below utilized to optimize design at 950px screen size and below for user accessibility */
   #headertag {
     flex-direction: column;
   }
