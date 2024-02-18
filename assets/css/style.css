@@ -159,10 +159,39 @@ footer a {
 }
 
 @media screen and (max-width: 1100px) {
+  header {
+    background-color: white;
+  }
+  
+  #name-header {
+    position: relative;
+    text-align: center;
+    margin-right: 20px;
+    padding-left: 0px;
+  }
+  
   nav {
       flex-direction: column;
       background-color: black;
       text-align: center;
-      margin-right: 0px;
+      margin: auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #headertag {
+    flex-direction: column;
+  }
+  .aboutme h1 {
+    padding-bottom: 0px;
+  }
+  .bodyh1 {
+    border: none;
+    text-align: center;
+    padding: 0px;
+    margin: 15px 0;
+  }
+  #footer_navlist {
+    padding-right: 0px;
   }
 }
