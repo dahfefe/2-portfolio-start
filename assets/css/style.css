@@ -26,8 +26,13 @@ header {
   line-height: 50px;
 }
 
+nav {
+  display: flex;
+}
+
 .text-right {
-  text-align: right;
+  justify-content: right;
+  margin-right: 40px;
 }
 
 li {
@@ -151,12 +156,4 @@ footer li {
 footer a {
   text-decoration: none;
   color: var(--footerlinkcolor);
-}
-
-@media screen and (max-width: 768px) {
-  /* Use flex-direction to stack the navbar, sidebar, and body */
-  header,
-  nav {
-    flex-direction: column;
-  }
 }
