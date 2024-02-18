@@ -64,6 +64,11 @@ body {
   background: linear-gradient(90deg, rgba(2,0,36,1) 26%, rgba(255,177,104,1) 100%, rgba(193,174,148,1) 100%, rgba(0,212,255,1) 100%);
 }
 
+.header_panel img {
+  border-radius: 120px;
+  margin-left: 80px;
+}
+
 .aboutme {
   display: flex;
   flex-wrap: wrap;
