@@ -48,6 +48,11 @@ a {
   color: var(--headertext-boxbackground);
 }
 
+body {
+  min-height: 100vh;
+  display: block;
+}
+
 .header_panel {
   display: flex;
   flex: 1;
@@ -55,11 +60,6 @@ a {
   width: 100%;
   margin-bottom: 25px;
   background-position: center;
-}
-
-body {
-  min-height: 100vh;
-  display: block;
 }
 
 .aboutme {
@@ -158,8 +158,11 @@ footer a {
   color: var(--footerlinkcolor);
 }
 
-@media screen and (max-width: 900px) {
-  body {
-
+@media screen and (max-width: 1100px) {
+  nav {
+      flex-direction: column;
+      background-color: black;
+      text-align: center;
+      margin-right: 0px;
   }
 }
