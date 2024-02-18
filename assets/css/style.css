@@ -4,7 +4,6 @@
   --footerlinkcolor: rgb(171, 149, 27);
 }
 
-/* Universal Selector */
 * {
   margin:0;
   padding:0;  
@@ -59,11 +58,12 @@ body {
 }
 
 .aboutme {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .bodyh1 {
-  display: inline-block;
+  flex: 1;
   float: left;
   margin: 0 20px 20px 50px;
   min-width: 170px;
@@ -76,8 +76,14 @@ body {
   padding-bottom: 80px;
 }
 
+.aboutme p {
+  flex: 3;
+}
+
 main {
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main h1 {
@@ -85,18 +91,22 @@ main h1 {
 }
 
 .portfolio_links {
+  flex: 3;
   display: flex;
-  /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
   margin-top: 2%;
   justify-content: space-evenly;
 }
 
 .card {
-  flex: 0 0 0;
-  position: relative;
+  flex: 1 0 0;
   padding: 0px;
   border: 6px solid var(--headertext-boxbackground);
+  margin: 1%;
+  min-width: 350px;
+}
+
+#last_four_projects {
 }
 
 .card h3 {
