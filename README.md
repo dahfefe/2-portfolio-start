@@ -10,8 +10,6 @@ My main purpose in creating this initial portfolio is fundamental as most (if no
 
 After completing this initial version of my coding portfolio, I learned a great deal about writing such a project from scratch and learning how all components of HTML and CSS truly entangle and work together to allow structure and design to display on webpages. The experience was immensely critical in helping me understand the true fundamentals in learning HTML and CSS functionality from the ground up and, more critically, in dealing with the repeated bugs and struggles that web developers undergo when writing code. 
 
-Deployed Application: 
-
 ## Usage
 
 The main case uses for this project include the following:
