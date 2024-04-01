@@ -31,6 +31,8 @@ Footer section:
     ![alt text](assets/images/Screenshot%20footer.png)
     ```
 
+Deployed Application: https://dahfefe.github.io/2-portfolio-start/
+
 ## Credits
 
 Responsive Design tutorial: https://www.youtube.com/watch?v=hS97LtBdM7I&list=PL4cUxeGkcC9g9Vh9MAA-XKnfJsWZnPZFw&index=8
